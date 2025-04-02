@@ -25,37 +25,56 @@
         <!-- Menu lateral -->
         <nav id="side-menu" class="fixed top-0 left-0 h-full w-full bg-black text-white transform -translate-x-full transition-transform duration-300 md:relative md:translate-x-0 md:w-full lg:w-full">
             <ul class="flex flex-col items-center justify-center h-full p-4 space-y-4 md:flex-row md:space-x-6 md:space-y-0 md:text-2xl lg:text-4xl lg:space-x-8">
-                <li class="md:hover:bg-green-600 md:hover:text-black md:hover:px-4 lg:hover:bg-green-700 lg:hover:text-black lg:hover:px-6 transition-all duration-300">
-                    <a href="#about" class="hover:text-secondary">About</a>
+                <li class="transition-all duration-300 md:hover:bg-green-600 md:hover:text-black md:hover:rounded-lg md:hover:px-4 lg:hover:bg-green-700 lg:hover:text-black lg:hover:rounded-lg lg:hover:px-6">
+                    <a href="#about" class="block px-4 py-2 hover:text-secondary">About</a>
                 </li>
-                <li class="md:hover:bg-green-600 md:hover:text-black md:hover:px-4 lg:hover:bg-green-700 lg:hover:text-black lg:hover:px-6 transition-all duration-300">
-                    <a href="#project" class="hover:text-secondary">Project</a>
+                <li class="transition-all duration-300 md:hover:bg-green-600 md:hover:text-black md:hover:rounded-lg md:hover:px-4 lg:hover:bg-green-700 lg:hover:text-black lg:hover:rounded-lg lg:hover:px-6">
+                    <a href="#project" class="block px-4 py-2 hover:text-secondary">Project</a>
                 </li>
-                <li class="md:hover:bg-green-600 md:hover:text-black md:hover:px-4 lg:hover:bg-green-700 lg:hover:text-black lg:hover:px-6 transition-all duration-300">
-                    <a href="#contact" class="hover:text-secondary">Contact</a>
+                <li class="transition-all duration-300 md:hover:bg-green-600 md:hover:text-black md:hover:rounded-lg md:hover:px-4 lg:hover:bg-green-700 lg:hover:text-black lg:hover:rounded-lg lg:hover:px-6">
+                    <a href="#contact" class="block px-4 py-2 hover:text-secondary">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero" class="flex flex-col items-center justify-center text-center bg-primary-light text-white h-screen p-4 bg-cover bg-center" style="background-image: url('images/nature.jpg');">
+        <section id="hero" class="flex flex-col items-center justify-center text-center bg-primary-light text-white h-screen p-4 bg-cover bg-center opa" style="background-image: url('images/nature.jpg');">
             <h1 class="font-nature text-4xl md:text-6xl font-bold mb-4">Solve a Code, Plant a Tree</h1>
-            <p class="text-lg md:text-xl font-light mb-6">Contribua para um futuro mais verde com cada linha de código.</p>
-            <a href="#project" class="bg-secondary hover:bg-secondary-dark text-white font-bold py-2 px-4 rounded">
-                Explore Projetos
+            <p class="text-lg md:text-xl font-light mb-6">Contribute to a greener future with every line of code.</p>
+            <a href="#project" class="bg-secondary hover:bg-secondary-dark text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg md:text-2xl md:rounded-2xl md:bg-black lg:text-3xl lg:rounded-3xl lg:bg-black">
+                Explore Projects
             </a>
         </section>
-        <section id="about" class="bg-primary-light text-black py-16 px-8">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="font-nature text-3xl md:text-5xl font-bold mb-6">Sobre o Projeto</h2>
-                <p class="text-lg md:text-xl font-light mb-4">
-                    Nosso projeto conecta tecnologia e sustentabilidade. A cada exercício de código resolvido, você contribui para o plantio de uma árvore. 
-                    Juntos, podemos criar um futuro mais verde e inspirar a próxima geração de desenvolvedores a fazer a diferença.
+        <section id="about" class="bg-primary-light text-black py-16 px-8 min-h-screen">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="font-nature text-3xl md:text-5xl font-bold mb-6">About the Project</h2>
+                <p class="text-lg md:text-xl font-light mb-12">
+                    Our project connects technology and sustainability. Solve coding exercises and contribute to planting trees.
                 </p>
-                <p class="text-lg md:text-xl font-light">
-                    Participe, aprenda e ajude o planeta ao mesmo tempo. Resolver problemas nunca foi tão recompensador!
-                </p>
+                <div class="flex flex-col md:flex-row justify-center items-stretch gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/3 transition-transform transform hover:scale-105 hover:bg-black hover:text-white flex flex-col">
+                        <h3 class="font-nature text-2xl font-bold mb-4">Learn and Grow</h3>
+                        <p class="text-lg">
+                            Every coding exercise you solve helps you grow as a developer while contributing to a greener planet.
+                        </p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/3 transition-transform transform hover:scale-105 hover:bg-black hover:text-white flex flex-col">
+                        <h3 class="font-nature text-2xl font-bold mb-4">Plant Trees</h3>
+                        <p class="text-lg">
+                            For every challenge completed, a tree is planted. Together, we can make a real impact on the environment.
+                        </p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/3 transition-transform transform hover:scale-105 hover:bg-black hover:text-white flex flex-col">
+                        <h3 class="font-nature text-2xl font-bold mb-4">Join the Movement</h3>
+                        <p class="text-lg">
+                            Be part of a global community of developers working towards a sustainable future, one line of code at a time.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="project"></section>

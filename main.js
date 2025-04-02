@@ -1,17 +1,15 @@
 const menuButton = document.getElementById('menu-button');
 const sideMenu = document.getElementById('side-menu');
+const menuOverlay = document.getElementById('menu-overlay');
 
-// Abrir o menu ao clicar no botão
+// Abrir o menu
 menuButton.addEventListener('click', () => {
-    sideMenu.classList.toggle('-translate-x-full');
+    sideMenu.classList.remove('-translate-x-full');
+    menuOverlay.classList.remove('hidden');
 });
 
-// Fechar o menu ao clicar fora dele
-document.addEventListener('click', (event) => {
-    const isClickInsideMenu = sideMenu.contains(event.target);
-    const isClickOnButton = menuButton.contains(event.target);
-
-    if (!isClickInsideMenu && !isClickOnButton) {
-        sideMenu.classList.add('-translate-x-full');
-    }
+// Fechar o menu ao clicar no overlay
+menuOverlay.addEventListener('click', () => {
+    sideMenu.classList.add('-translate-x-full');
+    menuOverlay.classList.add('hidden');
 });

@@ -11,12 +11,29 @@
 </head>
 
 <body class="bg-green-300" >
-    <header>
-        <nav class="flex justify-center">
-            <ul class="flex justify-evenly items-center bg-green-500 text-white w-3/4 pb-5">
-                <li class=""><a href="About">About</a></li>
-                <li><a href="Project">Project</a></li>
-                <li><a href="Contact">Contact</a></li>
+    <header class="bg-primary-dark text-white">
+        <div class="flex justify-between items-center p-4 lg:justify-center">
+            <h1 class="text-xl font-bold lg:flex ">Nature Project</h1>
+            <!-- Botão para abrir o menu -->
+            <button id="menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu lateral -->
+        <nav id="side-menu" class="fixed top-0 left-0 h-full w-64 bg-black text-white transform -translate-x-full transition-transform duration-300 md:relative md:translate-x-0 m  ">
+            <ul class="flex flex-col p-4 space-y-4 lg:flex lg:flex-row w-dvw border-2 border-white lg:space-x-4 lg:space-y-0 bg-black justify-evenly text-3xl " >
+                <li class="lg:hover:bg-green-700 lg:hover:text-black lgh:hover:p-4"">
+                    <a href="#about" class="hover:text-secondary">About</a>
+                </li>
+                <li class="lg:hover:bg-green-700 lg:hover:text-black"">
+                    <a href="#project" class="hover:text-secondary">Project</a>
+                </li>
+                <li class="lg:hover:bg-green-700 lg:hover:text-black"">
+                    <a href="#contact" class="hover:text-secondary">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -43,6 +60,7 @@
 
         </section>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

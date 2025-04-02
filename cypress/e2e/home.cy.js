@@ -13,7 +13,7 @@ describe('Home Page Tests', () => {
   });
 
   it('should display the main header', () => {
-    cy.get('h1').contains('Solve a code, Plant a Tree');
+    cy.get('[data-cy="hero-title"]').contains('Solve a Code, Plant a Tree');
   });
 
 });

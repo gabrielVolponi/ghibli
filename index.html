@@ -11,12 +11,12 @@
 
 </head>
 
-<body class="bg-green-300" >
-    <header class="bg-primary-dark text-white">
+<body class="bg-green-300">
+    <header class="bg-primary-dark text-white" data-cy="header">
         <div class="flex justify-between items-center p-4 lg:justify-center">
-            <h1 class="text-xl font-bold lg:flex ">Nature Project</h1>
+            <h1 class="text-xl font-bold lg:flex" data-cy="header-title">Nature Project</h1>
             <!-- Botão para abrir o menu -->
-            <button id="menu-button" class="md:hidden text-white">
+            <button id="menu-button" class="md:hidden text-white" data-cy="menu-button">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
@@ -24,15 +24,15 @@
         </div>
 
         <!-- Menu lateral -->
-        <nav id="side-menu" class="fixed top-0 left-0 h-full w-full bg-black text-white transform -translate-x-full transition-transform duration-300 md:relative md:translate-x-0 md:w-full lg:w-full">
+        <nav id="side-menu" class="fixed top-0 left-0 h-full w-full bg-black text-white transform -translate-x-full transition-transform duration-300 md:relative md:translate-x-0 md:w-full lg:w-full" data-cy="side-menu">
             <ul class="flex flex-col items-center justify-center h-full p-4 space-y-4 md:flex-row md:space-x-6 md:space-y-0 md:text-2xl lg:text-4xl lg:space-x-8">
-                <li class="transition-all duration-300 md:hover:bg-green-600 md:hover:text-black md:hover:rounded-lg md:hover:px-4 lg:hover:bg-green-700 lg:hover:text-black lg:hover:rounded-lg lg:hover:px-6">
+                <li class="transition-all duration-300 md:hover:bg-green-600 md:hover:text-black md:hover:rounded-lg md:hover:px-4 lg:hover:bg-green-700 lg:hover:text-black lg:hover:rounded-lg lg:hover:px-6" data-cy="menu-about">
                     <a href="#about" class="block px-4 py-2 hover:text-secondary">About</a>
                 </li>
-                <li class="transition-all duration-300 md:hover:bg-green-600 md:hover:text-black md:hover:rounded-lg md:hover:px-4 lg:hover:bg-green-700 lg:hover:text-black lg:hover:rounded-lg lg:hover:px-6">
+                <li class="transition-all duration-300 md:hover:bg-green-600 md:hover:text-black md:hover:rounded-lg md:hover:px-4 lg:hover:bg-green-700 lg:hover:text-black lg:hover:rounded-lg lg:hover:px-6" data-cy="menu-project">
                     <a href="#project" class="block px-4 py-2 hover:text-secondary">Project</a>
                 </li>
-                <li class="transition-all duration-300 md:hover:bg-green-600 md:hover:text-black md:hover:rounded-lg md:hover:px-4 lg:hover:bg-green-700 lg:hover:text-black lg:hover:rounded-lg lg:hover:px-6">
+                <li class="transition-all duration-300 md:hover:bg-green-600 md:hover:text-black md:hover:rounded-lg md:hover:px-4 lg:hover:bg-green-700 lg:hover:text-black lg:hover:rounded-lg lg:hover:px-6" data-cy="menu-contact">
                     <a href="#contact" class="block px-4 py-2 hover:text-secondary">Contact</a>
                 </li>
             </ul>
@@ -40,66 +40,66 @@
     </header>
 
     <main>
-        <section id="hero" class="flex flex-col items-center justify-center text-center bg-primary-light text-white h-screen p-4 bg-cover bg-center opa" style="background-image: url('images/nature.jpg');">
-            <h1 class="font-nature text-4xl md:text-6xl font-bold mb-4">Solve a Code, Plant a Tree</h1>
-            <p class="text-lg md:text-xl font-light mb-6">Contribute to a greener future with every line of code.</p>
-            <a href="#project" class="bg-secondary hover:bg-secondary-dark text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg md:text-2xl md:rounded-2xl md:bg-black lg:text-3xl lg:rounded-3xl lg:bg-black">
+        <section id="hero" class="flex flex-col items-center justify-center text-center bg-primary-light text-white h-screen p-4 bg-cover bg-center opa" style="background-image: url('images/nature.jpg');" data-cy="hero-section">
+            <h1 class="font-nature text-4xl md:text-6xl font-bold mb-4" data-cy="hero-title">Solve a Code, Plant a Tree</h1>
+            <p class="text-lg md:text-xl font-light mb-6" data-cy="hero-subtitle">Contribute to a greener future with every line of code.</p>
+            <a href="#project" class="bg-secondary hover:bg-secondary-dark text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg md:text-2xl md:rounded-2xl md:bg-black lg:text-3xl lg:rounded-3xl lg:bg-black" data-cy="hero-button">
                 Explore Projects
             </a>
         </section>
-        <section id="about" class="bg-primary-light text-black py-16 px-8 min-h-screen">
+        <section id="about" class="bg-primary-light text-black py-16 px-8 min-h-screen" data-cy="about-section">
             <div class="max-w-6xl mx-auto text-center">
-                <h2 class="font-nature text-3xl md:text-5xl font-bold mb-6">About the Project</h2>
-                <p class="text-lg md:text-xl font-light mb-12">
+                <h2 class="font-nature text-3xl md:text-5xl font-bold mb-6" data-cy="about-title">About the Project</h2>
+                <p class="text-lg md:text-xl font-light mb-12" data-cy="about-description">
                     Our project connects technology and sustainability. Solve coding exercises and contribute to planting trees.
                 </p>
                 <div class="flex flex-col md:flex-row justify-center items-stretch gap-8">
                     <!-- Card 1 -->
-                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/3 transition-transform transform hover:scale-105 hover:bg-black hover:text-white hover:cursor-pointer flex flex-col" onclick="window.location='#'">
-                        <h3 class="font-nature text-2xl font-bold mb-4">Learn and Grow</h3>
-                        <p class="text-lg">
+                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/3 transition-transform transform hover:scale-105 hover:bg-black hover:text-white hover:cursor-pointer flex flex-col" data-cy="about-card-1">
+                        <h3 class="font-nature text-2xl font-bold mb-4" data-cy="about-card-1-title">Learn and Grow</h3>
+                        <p class="text-lg" data-cy="about-card-1-description">
                             Every coding exercise you solve helps you grow as a developer while contributing to a greener planet.
                         </p>
                     </div>
                     <!-- Card 2 -->
-                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/3 transition-transform transform hover:scale-105 hover:bg-black hover:text-white flex flex-col">
-                        <h3 class="font-nature text-2xl font-bold mb-4">Plant Trees</h3>
-                        <p class="text-lg">
+                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/3 transition-transform transform hover:scale-105 hover:bg-black hover:text-white flex flex-col" data-cy="about-card-2">
+                        <h3 class="font-nature text-2xl font-bold mb-4" data-cy="about-card-2-title">Plant Trees</h3>
+                        <p class="text-lg" data-cy="about-card-2-description">
                             For every challenge completed, a tree is planted. Together, we can make a real impact on the environment.
                         </p>
                     </div>
                     <!-- Card 3 -->
-                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/3 transition-transform transform hover:scale-105 hover:bg-black hover:text-white flex flex-col">
-                        <h3 class="font-nature text-2xl font-bold mb-4">Join the Movement</h3>
-                        <p class="text-lg">
+                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/3 transition-transform transform hover:scale-105 hover:bg-black hover:text-white flex flex-col" data-cy="about-card-3">
+                        <h3 class="font-nature text-2xl font-bold mb-4" data-cy="about-card-3-title">Join the Movement</h3>
+                        <p class="text-lg" data-cy="about-card-3-description">
                             Be part of a global community of developers working towards a sustainable future, one line of code at a time.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="project"></section>
-        <section id="contact" class="bg-primary-light text-black py-16 px-8 m-1.5 min-h-screen flex items-center justify-center">
+        <section id="project" data-cy="project-section"></section>
+        <section id="contact" class="bg-primary-light text-black py-16 px-8 m-1.5 min-h-screen flex items-center justify-center" data-cy="contact-section">
             <div class="max-w-4xl w-full bg-white rounded-lg shadow-lg p-8 md:p-12 lg:p-16">
-                <h2 class="top-1 font-nature text-3xl md:text-5xl font-bold mb-6 text-center">Contact Us</h2>
-                <form action="#" method="POST" class="flex flex-col gap-6">
+                <h2 class="top-1 font-nature text-3xl md:text-5xl font-bold mb-6 text-center" data-cy="contact-title">Contact Us</h2>
+                <form action="#" method="POST" class="flex flex-col gap-6" data-cy="contact-form">
                     <!-- Name -->
-                    <div class="mb-4">
-                        <label for="name" class="block text-lg font-bold mb-2">Name</label>
-                        <input type="text" id="name" name="name" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your name" required>
+                    <div class="mb-4" data-cy="contact-name-field">
+                        <label for="name" class="block text-lg font-bold mb-2" data-cy="contact-name-label">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your name" required data-cy="contact-name-input">
                     </div>
                     <!-- Email -->
-                    <div class="mb-4">
-                        <label for="email" class="block text-lg font-bold mb-2">Email</label>
-                        <input type="email" id="email" name="email" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your email" required>
+                    <div class="mb-4" data-cy="contact-email-field">
+                        <label for="email" class="block text-lg font-bold mb-2" data-cy="contact-email-label">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your email" required data-cy="contact-email-input">
                     </div>
                     <!-- Phone -->
-                    <div class="mb-4">
-                        <label for="phone" class="block text-lg font-bold mb-2">Phone</label>
-                        <input type="tel" id="phone" name="phone" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your phone number" required>
+                    <div class="mb-4" data-cy="contact-phone-field">
+                        <label for="phone" class="block text-lg font-bold mb-2" data-cy="contact-phone-label">Phone</label>
+                        <input type="tel" id="phone" name="phone" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your phone number" required data-cy="contact-phone-input">
                     </div>
                     <!-- Submit Button -->
-                    <button type="submit" class="bg-secondary hover:bg-secondary-dark text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg text-lg">
+                    <button type="submit" class="bg-secondary hover:bg-secondary-dark text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg text-lg" data-cy="contact-submit-button">
                         Send Message
                     </button>
                 </form>
@@ -107,18 +107,17 @@
         </section>
     </main>
 
-    <footer class="w-1/1 h-2/4 bg-black flex flex-col justify-center items-center text-center md:flex-row md:justify-evenly md:p-4 lg:p-8 lg:justify-evenly">
-        <ul class="flex flex-col gap-1 text-white justify-center items-center p-4">
-            <li class="hover:text-green-400">gabrielvolponi11@gmail.com</li>
-            <li>+55 (11) 91287-9966</li>
-            <li></li>
+    <footer class="w-1/1 h-2/4 bg-black flex flex-col justify-center items-center text-center md:flex-row md:justify-evenly md:p-4 lg:p-8 lg:justify-evenly" data-cy="footer">
+        <ul class="flex flex-col gap-1 text-white justify-center items-center p-4" data-cy="footer-contact-info">
+            <li class="hover:text-green-400" data-cy="footer-email">gabrielvolponi11@gmail.com</li>
+            <li data-cy="footer-phone">+55 (11) 91287-9966</li>
         </ul>
-        <section id="socials">
+        <section id="socials" data-cy="footer-socials">
             <ul class="flex justify-center items-center gap-8 p-4 text-white hover:text-green-400">
-                <li><i class="fa-brands fa-github text-3xl"></i></li>
-                <li><i class="fa-brands fa-linkedin text-3xl"></i></li>
-                <li><i class="fa-brands fa-whatsapp text-3xl"></i></li>
-                <li><i class="fa-solid fa-envelope text-3xl"></i></li>
+                <li data-cy="social-github"><i class="fa-brands fa-github text-3xl"></i></li>
+                <li data-cy="social-linkedin"><i class="fa-brands fa-linkedin text-3xl"></i></li>
+                <li data-cy="social-whatsapp"><i class="fa-brands fa-whatsapp text-3xl"></i></li>
+                <li data-cy="social-email"><i class="fa-solid fa-envelope text-3xl"></i></li>
             </ul>
         </section>
     </footer>
